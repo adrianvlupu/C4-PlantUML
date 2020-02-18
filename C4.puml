@@ -1,10 +1,12 @@
-' C4-PlantUML, version 1.0.0
-' https://github.com/RicardoNiepel/C4-PlantUML
+' C4-PlantUML
+' https://github.com/adrianvlupu/C4-PlantUML
 
 ' Colors
 ' ##################################
 
 !global $ELEMENT_FONT_COLOR = "#FFFFFF"
+!global $LEGEND_FONT_COLOR = "#FFFFFF"
+!global $LEGEND_TITLE_COLOR = "#000000"
 
 ' Styling
 ' ##################################
@@ -15,6 +17,10 @@ skinparam defaultTextAlignment center
 
 skinparam wrapWidth 200
 skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor $LEGEND_FONT_COLOR
 
 skinparam rectangle {
     StereotypeFontSize 12
@@ -79,83 +85,83 @@ $alias1 $direction $alias2 : **$label**\n//<size:$TECHN_FONT_SIZE>[$techn]</size
 !endfunction
 
 !unquoted function Rel($from, $to, $label)
-Rel_($from, $to, $label, "-->")
+Rel_($from, $to, $label, "-->>")
 !endfunction
 !unquoted function Rel($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-->")
+Rel_($from, $to, $label, $techn, "-->>")
 !endfunction
 
 !unquoted function Rel_Back($from, $to, $label)
-Rel_($from, $to, $label, "<--")
+Rel_($from, $to, $label, "<<--")
 !endfunction
 !unquoted function Rel_Back($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "<--")
+Rel_($from, $to, $label, $techn, "<<--")
 !endfunction
 
 !unquoted function Rel_Neighbor($from, $to, $label)
-Rel_($from, $to, $label, "->")
+Rel_($from, $to, $label, "->>")
 !endfunction
 !unquoted function Rel_Neighbor($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "->")
+Rel_($from, $to, $label, $techn, "->>")
 !endfunction
 
 !unquoted function Rel_Back_Neighbor($from, $to, $label)
-Rel_($from, $to, $label, "<-")
+Rel_($from, $to, $label, "<<-")
 !endfunction
 !unquoted function Rel_Back_Neighbor($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "<-")
+Rel_($from, $to, $label, $techn, "<<-")
 !endfunction
 
 !unquoted function Rel_D($from, $to, $label)
-Rel_($from, $to, $label, "-DOWN->")
+Rel_($from, $to, $label, "-DOWN->>")
 !endfunction
 !unquoted function Rel_D($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-DOWN->")
+Rel_($from, $to, $label, $techn, "-DOWN->>")
 !endfunction
 !unquoted function Rel_Down($from, $to, $label)
-Rel_($from, $to, $label, "-DOWN->")
+Rel_($from, $to, $label, "-DOWN->>")
 !endfunction
 !unquoted function Rel_Down($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-DOWN->")
+Rel_($from, $to, $label, $techn, "-DOWN->>")
 !endfunction
 
 !unquoted function Rel_U($from, $to, $label)
-Rel_($from, $to, $label, "-UP->")
+Rel_($from, $to, $label, "-UP->>")
 !endfunction
 !unquoted function Rel_U($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-UP->")
+Rel_($from, $to, $label, $techn, "-UP->>")
 !endfunction
 !unquoted function Rel_Up($from, $to, $label)
-Rel_($from, $to, $label, "-UP->")
+Rel_($from, $to, $label, "-UP->>")
 !endfunction
 !unquoted function Rel_Up($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-UP->")
+Rel_($from, $to, $label, $techn, "-UP->>")
 !endfunction
 
 !unquoted function Rel_L($from, $to, $label)
-Rel_($from, $to, $label, "-LEFT->")
+Rel_($from, $to, $label, "-LEFT->>")
 !endfunction
 !unquoted function Rel_L($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-LEFT->")
+Rel_($from, $to, $label, $techn, "-LEFT->>")
 !endfunction
 !unquoted function Rel_Left($from, $to, $label)
-Rel_($from, $to, $label, "-LEFT->")
+Rel_($from, $to, $label, "-LEFT->>")
 !endfunction
 !unquoted function Rel_Left($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-LEFT->")
+Rel_($from, $to, $label, $techn, "-LEFT->>")
 !endfunction
 
 !unquoted function Rel_R($from, $to, $label)
-Rel_($from, $to, $label, "-RIGHT->")
+Rel_($from, $to, $label, "-RIGHT->>")
 !endfunction
 !unquoted function Rel_R($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-RIGHT->")
+Rel_($from, $to, $label, $techn, "-RIGHT->>")
 !endfunction
 !unquoted function Rel_Right($from, $to, $label)
-Rel_($from, $to, $label, "-RIGHT->")
+Rel_($from, $to, $label, "-RIGHT->>")
 !endfunction
 !unquoted function Rel_Right($from, $to, $label, $techn)
-Rel_($from, $to, $label, $techn, "-RIGHT->")
+Rel_($from, $to, $label, $techn, "-RIGHT->>")
 !endfunction
 
 ' Layout Helpers
