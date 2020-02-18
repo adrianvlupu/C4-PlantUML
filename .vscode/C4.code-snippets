@@ -65,26 +65,26 @@
 	"C4_Person_Ext": {
 		"scope": "diagram",
 		"prefix": [
-			"External Person",
-			"Person (External)"
+			"Existing Person",
+			"Person (Existing)"
 		],
 		"body": [
 			"Person_Ext(${1:alias}, \"${2:label}\")",
 			"$0"
 		],
-		"description": "Add External Person to C4 diagram"
+		"description": "Add Existing Person to C4 diagram"
 	},
 	"C4_Person_Ext_Descr": {
 		"scope": "diagram",
 		"prefix": [
-			"External Person with Description",
-			"Person (External) with Description"
+			"Existing Person with Description",
+			"Person (Existing) with Description"
 		],
 		"body": [
 			"Person_Ext(${1:alias}, \"${2:label}\", \"${3:description}\")",
 			"$0"
 		],
-		"description": "Add External Person with Description to C4 diagram"
+		"description": "Add Existing Person with Description to C4 diagram"
 	},
 	"C4_Container": {
 		"scope": "diagram",
@@ -192,26 +192,26 @@
 	"C4_System_Ext": {
 		"scope": "diagram",
 		"prefix": [
-			"External System",
-			"System (External)"
+			"Existing System",
+			"System (Existing)"
 		],
 		"body": [
 			"System_Ext(${1:alias}, \"${2:label}\")",
 			"$0"
 		],
-		"description": "Add External System to C4 diagram"
+		"description": "Add Existing System to C4 diagram"
 	},
 	"C4_System_Ext_Descr": {
 		"scope": "diagram",
 		"prefix": [
-			"External System with Description",
-			"System (External) with Description"
+			"Existing System with Description",
+			"System (Existing) with Description"
 		],
 		"body": [
 			"System_Ext(${1:alias}, \"${2:label}\", \"${3:description}\")",
 			"$0"
 		],
-		"description": "Add External System with Description to C4 diagram"
+		"description": "Add Existing System with Description to C4 diagram"
 	},
 	"C4_System_Boundary": {
 		"scope": "diagram",
