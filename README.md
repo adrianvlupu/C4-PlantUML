@@ -125,6 +125,9 @@ Rel_R(api, db, "Reads/Writes")
     * `Container`
     * `ContainerDb`
     * `ContainerQueue`
+    * `Container_Ext`
+    * `ContainerDb_Ext`
+    * `ContainerQueue_Ext`
     * `Container_Boundary`
 * Component diagram
   * Import: `!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/1.2020.07/C4_Component.puml`
@@ -132,6 +135,9 @@ Rel_R(api, db, "Reads/Writes")
     * `Component`
     * `ComponentDb`
     * `ComponentQueue`
+    * `Component_Ext`
+    * `ComponentDb_Ext`
+    * `ComponentQueue_Ext`
 * Dynamic diagram
   * Import: `!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/1.2020.07/C4_Dynamic.puml`
   * Additional Macros: 
