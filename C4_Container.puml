@@ -77,9 +77,9 @@ rectangle "$getContainer($label, $techn, $descr, $sprite)" <<container>> as $ali
 database "$getContainer($label, $techn, $descr, $sprite)" <<container>> as $alias
 !endfunction
 
-!unquoted procedure ContainerQueue($alias, $label, $techn, $descr="", $sprite="")
+!unquoted function ContainerQueue($alias, $label, $techn, $descr="", $sprite="")
 queue "$getContainer($label, $techn, $descr, $sprite)" <<container>> as $alias
-!endprocedure
+!endfunction
 
 ' Boundaries
 ' ##################################
