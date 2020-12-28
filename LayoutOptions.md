@@ -122,7 +122,7 @@ This can be enabled with `HIDE_STEREOTYPE()`.
 
 ```csharp
 @startuml HIDE_STEREOTYPE Sample
-!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/latest/C4_Container.puml
+!include https://raw.githubusercontent.com/adrianvlupu/C4-PlantUML/1.2019.09/C4_Container.puml
 
 HIDE_STEREOTYPE()
 
