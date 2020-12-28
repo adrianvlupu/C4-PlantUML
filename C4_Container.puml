@@ -106,17 +106,17 @@ database "$getContainer($label, $techn, $descr, $sprite)" <<container>> as $alia
 queue "$getContainer($label, $techn, $descr, $sprite)" <<container>> as $alias
 !endfunction
 
-!unquoted procedure Container_Ext($alias, $label, $techn, $descr="", $sprite="")
+!unquoted function Container_Ext($alias, $label, $techn, $descr="", $sprite="")
 rectangle "$getContainer($label, $techn, $descr, $sprite)" <<external_container>> as $alias
-!endprocedure
+!endfunction
 
-!unquoted procedure ContainerDb_Ext($alias, $label, $techn, $descr="", $sprite="")
+!unquoted function ContainerDb_Ext($alias, $label, $techn, $descr="", $sprite="")
 database "$getContainer($label, $techn, $descr, $sprite)" <<external_container>> as $alias
-!endprocedure
+!endfunction
 
-!unquoted procedure ContainerQueue_Ext($alias, $label, $techn, $descr="", $sprite="")
+!unquoted function ContainerQueue_Ext($alias, $label, $techn, $descr="", $sprite="")
 queue "$getContainer($label, $techn, $descr, $sprite)" <<external_container>> as $alias
-!endprocedure
+!endfunction
 
 ' Boundaries
 ' ##################################
